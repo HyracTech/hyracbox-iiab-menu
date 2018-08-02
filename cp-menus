@@ -40,13 +40,17 @@ if [ ! -e $MENUDIR/config.json ]; then
 fi
 
 # copy sample index file if none exists
+# altered to set the hyracbox homepage by kananigit
 if [ ! -e $MENUDIR/index.html ]; then
-    cp samples/sampler.html $MENUDIR/index.html
+    #cp samples/sampler.html $MENUDIR/index.html
+    cp samples/hyracbox_index.html $MENUDIR/index.html
 fi
 
 # copy sample index file if none exists in home
+# altered to set the hyracbox homepage by kananigit
 if [ ! -e $WWWROOT/home/index.html ]; then
-    cp samples/sampler.html $WWWROOT/home/index.html
+    #cp samples/sampler.html $WWWROOT/home/index.html
+    cp samples/hyracbox_index.html $WWWROOT/home/index.html
 fi
 
 # restore modified files from local
